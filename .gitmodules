@@ -1,0 +1,6 @@
+[submodule "client"]
+	path = client
+	url = git@github.com:ndunks/qcdesa-client-pwa.git
+[submodule "server"]
+	path = server
+	url = git@github.com:ndunks/qcdesa-server.git
