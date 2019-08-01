@@ -1,0 +1,14 @@
+{
+  "name": "quickcountdesa",
+  "version": "1.0.0",
+  "description": "Server Client App",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "dependencies": {
+    "@vue/cli-plugin-typescript": "^3.9.0"
+  }
+}
