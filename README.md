@@ -16,7 +16,6 @@ sesuai dengan hasil penghitungan manual oleh Panitia.
 * [LightCCTV](https://www.facebook.com/Light-cctv-klampok-347276432868896/)
 * [LPK Kiraboshi](https://www.facebook.com/kiraboshilpk)
 
-
 ## Screenshot
 
 ### Halaman Pengunjung / Pemantau
