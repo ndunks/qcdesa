@@ -2,8 +2,13 @@
   "name": "quickcountdesa",
   "version": "1.0.0",
   "description": "Server Client App",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "private": true,
+  "scripts": {
+    "build": "yarn --cwd server build && yarn --cwd client build",
+    "postbuild": "mkdir dist; cp -rv server/dist dist/server; cp -rv client/dist dist/client; cp client/package.json dist/client/; cp server/package.json dist/server/; cp -uv package.json dist/",
+    "dockerize": "docker build -t qcdesa -f Dockerfile ."
+  },
   "workspaces": [
     "server",
     "client"
