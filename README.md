@@ -93,6 +93,17 @@ cd client
 yarn build
 ```
 
+**Docker Build**
+
+``` bash
+yarn dockerize
+```
+Kemudian jalankan containernya
+
+``` bash
+docker run -p 80:80 -p 8888:8888 -it qcdesa --debug true --passcode admin
+```
+
 
 ## Screenshot
 
