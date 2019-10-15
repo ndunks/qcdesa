@@ -36,7 +36,7 @@ Pertama, kamu harus sudah menginstall [Docker](https://docs.docker.com/docker-fo
 
 Jalankan perintah berikut
 ```
-docker run -p 80:80 -p 8888:8888 -it qcdesa --debug true --passcode admin
+docker run -p 80:80 -p 8888:8888 -it ndunks/qcdesa --debug true --passcode admin
 ```
 
 **Buka Browser** ke alamat `http://localhost/`
