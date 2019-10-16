@@ -7,13 +7,13 @@
   "scripts": {
     "build": "yarn --cwd server build && yarn --cwd client build",
     "postbuild": "mkdir dist; cp -rv server/dist dist/server; cp -rv client/dist dist/client; cp client/package.json dist/client/; cp server/package.json dist/server/; cp -uv package.json dist/",
-    "dockerize": "docker build -t qcdesa -f Dockerfile ."
+    "dockerize": "docker build -t qcdesa -f Dockerfile .",
+    "portable": "yarn -W --cwd portable && portable/pack.sh",
+    "clean": "rm -rf dist server/dist client/dist portable/dist",
+    "postinstall": "yarn -W --cwd portable"
   },
   "workspaces": [
     "server",
     "client"
-  ],
-  "dependencies": {
-    "@vue/cli-plugin-typescript": "^3.9.0"
-  }
+  ]
 }
