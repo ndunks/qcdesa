@@ -8,8 +8,36 @@ dengan kerjasama yang baik dengan tim saksi salah satu calon yang berperan sebag
 atau penginput data, Aplikasi ini telah berhasil menampilkan data secara realtime dan akurat
 sesuai dengan hasil penghitungan manual oleh Panitia.
 
-## Informasi Folder
+## PR Are Welcome
+Aplikasi ini masih minim dalam dokumentasi, installasi, dan cara penggunaan. Bagi yang mau berkontribusi, saya tunggu PR-nya :smile:
 
+## Jalankan Aplikasi Portabel pada Linux & Windows (Recommended for End-User)
+Bagi kamu yang ingin mencoba menjalankan aplikasi ini di lokal, silahkan unduh versi portable di halaman ini: [Releases](https://github.com/ndunks/qcdesa/releases)
+
+    Note: Jika kamu memiliki xampp atau app lain yang menggunakan port 80, sebaiknya nonaktifkan dulu
+- Setelah mengunduh file qcdesa-x.x.x-\*.zip, lalu eksrak konten.
+- Klik pada file `qcdesa.cmd` utk Windows, atau `qcdesa.sh` untuk Linux
+- **Buka Browser** ke alamat `http://localhost/`
+- **Masuk ke halaman admin** ke alamat `http://localhost/admin` passcodenya: `admin`
+
+
+## Jalankan Aplikasi via Docker
+
+Pertama, kamu harus sudah menginstall [Docker](https://docs.docker.com/docker-for-windows/install/) `~800MB`.
+
+    Note: Jika kamu memiliki xampp atau app lain yang menggunakan port 80, sebaiknya nonaktifkan dulu
+
+Jalankan perintah berikut
+```
+docker run -p 80:80 -p 8888:8888 -it ndunks/qcdesa --debug true --passcode admin
+```
+
+**Buka Browser** ke alamat `http://localhost/`
+
+**Masuk ke halaman admin** ke alamat `http://localhost/admin` passcodenya: `admin`
+
+
+## Informasi Folder
 
 **client/**
 
@@ -27,27 +55,11 @@ Berisi file yang akan dimasukan pada docker container di folder `/app/`
 
 Konfigurasi Editor (Visual Studio Code)
 
-
-## Jalankan aplikasi via Docker
-
-Pertama, kamu harus sudah menginstall [Docker](https://docs.docker.com/docker-for-windows/install/).
-
-    Note: Jika kamu memiliki xampp atau app lain yang menggunakan port 80, sebaiknya nonaktifkan dulu
-
-Jalankan perintah berikut
-```
-docker run -p 80:80 -p 8888:8888 -it ndunks/qcdesa --debug true --passcode admin
-```
-
-**Buka Browser** ke alamat `http://localhost/`
-
-**Masuk ke halaman admin** ke alamat `http://localhost/admin` passcodenya: `admin`
-
 ## Untuk Pengembang / Programmer
 
 Jika kamu ingin mengembangkan aplikasi ini, saya sarankan menggunakan OS Linux. Kenapa? Karena Windows itu untuk end-user (kantoran) dan Mac untuk desain grafis.
 
-Projek ini dibuat menggunakan NodeJS jadi saya harap kamu sudah familiar dengan JavaScript. Jika belum familiar, silahkan install projek yang sudah dibuild pada folder `dist`.
+Projek ini dibuat menggunakan NodeJS jadi saya harap kamu sudah familiar dengan JavaScript. Jika belum familiar, silahkan install projek yang sudah dibuild pada halaman [Releases](https://github.com/ndunks/qcdesa/releases).
 
 Berikut adalah informasi mengenai apa yang diperlukan untuk mengedit kode script.
 
